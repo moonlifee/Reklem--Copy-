@@ -13,6 +13,7 @@ import Basket from "./pages/Basket";
 import Editor from "./pages/Editor";
 import NotFound from "./pages/NotFound";
 
+
 function App() {
   return (
     // <div className="App" style={loginModal ? style : null}>
