@@ -1,0 +1,29 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.navbar{
+    width: 100%;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.flex-box{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 28px;
+
+}
+.user_box{
+display: flex;
+flex-wrap: wrap;
+gap: 28px;
+}
+.flex-wrap{
+    display: flex;
+    gap: 28px;
+}
