@@ -7,6 +7,7 @@ import { IoSearch } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { SlBasketLoaded } from "react-icons/sl";
 import { FiEdit } from "react-icons/fi";
+
 function Navbar() {
     return (
         <div>
@@ -19,15 +20,8 @@ function Navbar() {
                     <div className="Navlink_box">
                         <ul className='flex-box flex-auto justify-around'>
                             <div className="dropdown_box">
-                                <button type='Button' className='Button'>  <FaBars /></button>
-                                <div class="dropdown">
-                                    <ul>
-                                        <li>Option 1</li>
-                                        <li>Option 2</li>
-                                        <li>Option 3</li>
-                                        <li>Option 4</li>
-                                    </ul>
-                                </div>
+                                {/* <Dropdown/> */}
+                             
                             </div>
                             <li>
                                 <NavLink to={'oCompany'}>О компании</NavLink>

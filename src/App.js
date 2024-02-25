@@ -12,6 +12,8 @@ import Profile from "./pages/Profile";
 import Basket from "./pages/Basket";
 import Editor from "./pages/Editor";
 import NotFound from "./pages/NotFound";
+import Portfolio from "./pages/Portfolio";
+
 
 
 function App() {
@@ -34,11 +36,14 @@ function App() {
       
         <Route path="basket" element={<Basket />} />
         <Route path="editor" element={<Editor />} />
+        <Route path="Portfolio" element={<Portfolio />} />
         
         <Route path="*" element={<NotFound />} />
       </Routes>
 
-      <Footer />
+      <Footer/>
+        
+     
     </div>
   );
 }
