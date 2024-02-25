@@ -1,11 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import  './Footer.css'
+import './Footer.css'
 import foo from './navimg/logo 1 (Traced).png'
-import Portfolio from '../pages/Portfolio'
+import { FaInstagram, FaRegUser } from "react-icons/fa";
+import { LuFacebook } from "react-icons/lu";
+import { FiYoutube } from "react-icons/fi";
+import { IoDocumentTextOutline } from "react-icons/io5";
+
 function Footer() {
   return (
-    <> 
+    <div>
       <div className="wrappper_box container">
         <div>
           <NavLink className='img'>
@@ -99,9 +103,37 @@ function Footer() {
           </div>
         </div>
       </div>
+      <hr />
+      <div className="footer_bottom_box container">
+        <div className="bottom_footer_1">
+          <div className='footer_icon flex-wrap g-[28px]'>
+            <NavLink ><FaInstagram className=' w-6' /></NavLink>
+            <NavLink > <LuFacebook /></NavLink>
+            <NavLink><FiYoutube /></NavLink>
+          </div>
+          <div className="navigation_box">
+            <h4>Москва</h4>
+            <span>+7 (945) 133-16-28</span>
+          </div>
+          <div className="navigation_box">
+            <h4>Улан-Удэ</h4>
+            <span>+7 (925) 272-83-08</span>
+          </div>
+          <div className="navigation_box">
+            <div className="navib_icon_box"> <FaRegUser /> <NavLink> Личный кабинет</NavLink></div>
+            <br />
+            <span>info@reklem.ru</span>
+          </div><div className="navigation_box">
+            <div className="navib_icon_box"> <IoDocumentTextOutline /> <NavLink> Обработка данных</NavLink></div>
+            <br />
+            <span>© Copyright 2021</span>
+          </div>
+
+        </div>
+      </div>
 
 
-    </>
+    </div>
   )
 }
 
